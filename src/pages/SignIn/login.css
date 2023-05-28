@@ -1,0 +1,110 @@
+.logIn {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logIn > div {
+    width: 100%;
+}
+
+.logIn > div > * {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logIn .logo {
+    border: 3px solid rgb(41, 231, 248);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    animation: ease-in-out shadow 10s infinite;
+}
+
+.logIn .logo img {
+    width: 80px;
+}
+
+.logIn .log h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(253, 16, 210);
+}
+
+.logIn .log label {
+    color: rgb(19, 160, 172);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logIn .log input {
+    width: 100%;
+    max-width: 250px;
+    padding: 3px;
+    border: 2px solid rgb(19, 160, 172);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logIn .log button {
+    font-size: 17px;
+    margin: 6px 0 15px 0;
+    font-weight: bold;
+    padding: 7px;
+    width: 100%;
+    max-width: 250px;
+    background-color: transparent;
+    border: 2px solid rgb(253, 16, 210);
+    border-radius: 20px;
+    color: rgb(253, 16, 210);
+    transition: ease 0.5s;
+}
+
+.logIn .log button:hover {
+    background-color: rgb(253, 16, 210);
+    color: #efefef;
+    box-shadow: 0 0 5px rgb(255, 83, 223),
+                0 0 10px rgb(253, 54, 217);
+}
+
+.logIn .link {
+    color: rgb(19, 160, 172);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+} 
+
+.logIn .link:hover {
+    color: rgb(255, 83, 223);
+}
+
+
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 15px rgb(255, 83, 223);
+    }
+    25% {
+        box-shadow: 0 0 15px rgb(255, 83, 223),
+                    0 0 10px rgb(253, 54, 217);
+    }
+    50% {
+        box-shadow: 0 0 15px rgb(255, 83, 223),
+                    0 0 10px rgb(253, 54, 217),
+                    0 0 10px rgb(253, 16, 210);
+    }
+    75% {
+        box-shadow: 0 0 15px rgb(255, 83, 223),
+                    0 0 10px rgb(253, 54, 217);
+    }
+    100% {
+        box-shadow: 0 0 15px rgb(255, 83, 223);
+    }
+}

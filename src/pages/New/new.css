@@ -1,0 +1,21 @@
+
+.status {
+    margin: 10px 0;
+}
+
+.status label {
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+.status input {
+    margin: 0 0 0 15px;
+    padding: 0;
+    width: 20px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
