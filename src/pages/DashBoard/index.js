@@ -1,10 +1,9 @@
-
 import './dashboard.css';
 import { useEffect, useState , useContext } from 'react';
 
 import Header from '../../components/Header';
 import Title from '../../components/Title';
-import { FiEdit2, FiMessageSquare, FiPlus, FiSearch , FiDelete} from 'react-icons/fi';
+import { FiEdit2, FiMessageSquare, FiPlus, FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { app } from '../../services/firebaseConection';
 import { collection, getFirestore , doc, getDocs } from 'firebase/firestore';
@@ -72,7 +71,7 @@ export default () => {
 
                     
                     <div id='board' className="container dashboard">
-                        <h2>Procurando Tarefas...</h2>
+                        <h2>Searching Calls...</h2>
 
                     </div>
                 </div>
@@ -101,7 +100,7 @@ export default () => {
                 <Header />
     
                 <div className="content">
-                    <Title name="Tarefas">
+                    <Title name="Calls">
                         <FiMessageSquare />
                     </Title>
     
@@ -109,30 +108,29 @@ export default () => {
                     <div id='board' className="container dashboard">
                         {calls.length === 0 ? (
                             <div>
-                                <p>Sem Tarefas Registardas :(</p>
+                                <p>No call registered :(</p>
     
                                 <Link to="/new">
                                     <FiPlus />
-                                    Add Tarefa
+                                    Add Call
                                 </Link>
                             </div>
                         ) : (
                             <div className='calls'>
                                 <Link to="/new">
                                     <FiPlus />
-                                    Add Tarefa
+                                    Add Call
                                 </Link>
     
                                 <table>
     
                                     <thead>
                                         <tr>
-                                            <th scope='col'>Tarefa</th>
-                                            <th scope='col'>Descrição</th>
-                                            <th scope='col'>Data de Realização</th>
+                                            <th scope='col'>Costumers</th>
+                                            <th scope='col'>Description</th>
                                             <th scope='col'>Status</th>
-                                            <th scope='col'>Data de Criação</th>
-                                            <th scope='col'>Ações</th>
+                                            <th scope='col'>Add´s Date</th>
+                                            <th scope='col'>#</th>
                                         </tr>
                                     </thead>
     
@@ -140,23 +138,18 @@ export default () => {
                                         {calls.map((item, index) => {
                                             return(
                                                 <tr>
-                                                    <td data-label="Tarefa">
-                                                        <div>{item.tarefa}</div>
+                                                    <td data-label="client">
+                                                        <div>{item.customer}</div>
                                                     </td>
-                                                    <td data-label="Descrição">
-                                                        <div>{item.descricao}</div>
-                                                    </td>
-                                                    <td data-label="Data Realização">
-                                                        <div>
-                                                            {item.data}
-                                                        </div>
+                                                    <td data-label="description">
+                                                        <div>{item.problem}</div>
                                                     </td>
                                                     <td data-label="status">
                                                         <div>
                                                             <span className='badge' style={item.status === "Opened" ? {backgroundColor: '#5cb85c'} : (item.status === "Pending" ? {backgroundColor: 'red'} : {backgroundColor: '#777'})}>{item.status}</span>
                                                         </div>
                                                      </td>
-                                                     <td data-label="Data Criação">
+                                                     <td data-label="date">
                                                         <div>
                                                             {format(item.created.toDate(), "dd/MM/yyyy")}
                                                         </div>
@@ -168,9 +161,6 @@ export default () => {
                                                             </button>
                                                             <button className='action' style={{backgroundColor: '#f6a935'}}>
                                                                 <FiEdit2 />
-                                                            </button>
-                                                            <button className='action' style={{backgroundColor: '#f00'}}>
-                                                                <FiDelete />
                                                             </button>
                                                         </div>
                                                     </td>
