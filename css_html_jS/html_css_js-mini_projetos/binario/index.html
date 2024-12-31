@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Binario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputcontainer">
+            <input type="text" maxlength="8" onchange="converter(this.value)">
+        </div>
+        <div class="outputcontainer">
+            <h1 id="resp" >0</h1>
+        </div>
+    </div>
+     <script>
+        function converter(num) {
+            var bin = parseInt(num).toString(2)
+            document.getElementById("resp").innerText=bin
+        }
+     </script>
+</body>
+
+</html>

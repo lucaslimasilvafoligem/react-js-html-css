@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Hechiceroo-Mnemo-Js.ico" type="image/x-icon">
+    <title>Primeiro programa</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: brown;
+            font: normal 30pt Times;
+        }
+        h1 {color: blue;}
+        hr{color: yellow;}
+    </style>
+</head>
+<body>
+    <h1>Hello World &#x1F916</h1> <!--Título-->>
+    <hr>
+    <p>Primeiro uso de JS</p>
+    <img src="sapo.jpeg" alt="O sapo">
+    <script>
+    var name = window.prompt('Seu nome?')
+    window.alert('Bem vindo, ' + name)
+    var n1 = window.prompt('Dígite um número')
+    var n2 = window.prompt('Dígite outro número')
+    var s = Number.parseInt(n1) + Number.parseInt(n2)
+    window.alert('A soma é ' + s)
+    window.alert(`Valor correto ${name}?`)
+    window.alert('Seu nome tem ' + name.length + ' letras ' + name.toUpperCase() + ' , Correto?' )
+    </script>
+</body>
+</html>

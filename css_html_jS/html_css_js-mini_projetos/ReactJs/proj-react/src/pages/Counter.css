@@ -1,0 +1,7 @@
+.counter{
+  background-color: goldenrod;
+  font-size: 4em;
+  color: blueviolet;
+  justify-content: center;
+  display: flex;
+}

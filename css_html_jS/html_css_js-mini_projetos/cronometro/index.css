@@ -1,0 +1,27 @@
+div{
+    text-align: center;
+}
+
+body {
+  background-color: blue;
+}
+
+button:hover{
+    cursor: pointer;
+    color: blue;
+    height: 3em;
+    width: 6em;
+    border: none;
+}
+
+.start-btn{
+    background-color: chartreuse;
+}
+
+.pause-btn{
+    background-color: blanchedalmond;
+}
+
+.stop-btn{
+    background-color: brown;
+}

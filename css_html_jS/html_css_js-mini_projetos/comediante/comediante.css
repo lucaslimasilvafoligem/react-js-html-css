@@ -1,0 +1,10 @@
+#estiloH1{
+    color: blue;
+    background-color: chartreuse;
+}
+
+button:hover{
+    color: blue;
+    background-color: chartreuse;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.input_a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    height: 2em;
+    border: none;
+}
+
+.area{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    margin-block-start: 8em;
+}
+
+.conteiner{
+    background-color: #1C1C1C;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    border-radius: 1.6em;
+    
+}
+
+h1,h2{
+    color: #D4D4D2;
+    margin: 0.5em;
+}
+
+button{
+    color: blue;
+    align-items: center;
+    background-color: aquamarine;
+    height: 3em;
+    width: 100%;
+    border: none; 
+}
+
+button:hover{
+    height: 4em;
+    width: 100%;
+    color: chartreuse;
+    background-color: blue;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .caixa{
+            display: flex;
+            background-color: blueviolet;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        span{
+            background-color: blue;
+            margin: 0.5em;
+        }
+
+        div{
+            background-color: aqua;
+        }
+
+        .item1{
+            flex-grow: 1;
+            height: 10em;
+            width: 4em;
+        }
+
+        .item2{
+            flex-grow: 1;
+            height: 20em;
+            width: 5em;
+        }
+
+        .item3{
+            flex-grow: 1;
+            flex-basis: 1;
+            height: 6em;
+            width: 7em ;
+        }
+    </style>
+</head>
+<body>
+    Flexbox!
+    <div class="caixa">
+        <span class="item1">1</span>
+        <span class="item2">2</span>
+        <span class="item3">3</span>
+    </div>
+</body>
+</html>
