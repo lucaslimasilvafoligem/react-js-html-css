@@ -52,7 +52,7 @@ O principal objetivo deste repositório é documentar o progresso nos estudos de
 
 ## Pré-visualização do Projeto
 
-![To-Do List Preview](https://via.placeholder.com/800x400.png?text=To-Do+List+App+Preview)
+Abra o diretório do todo-list, lá há mais informações de como rodar o projeto.
 
 ## Autor
 
